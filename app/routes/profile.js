@@ -93,7 +93,7 @@ function ProfileHandler(db) {
                 if (err) return next(err);
 
                 // WARN: Applying any sting specific methods here w/o checking type of inputs could lead to DoS by HPP
-                //firstName = firstName.trim();
+                firstName = firstName.trim();
                 user.updateSuccess = true;
                 user.userId = userId;
 
